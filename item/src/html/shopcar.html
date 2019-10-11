@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <title>购物车</title>
+</head>
+
+<body>
+    <div id="shopcar">
+        <div class="head">
+            <div class="content">
+                <div class="fl">
+                    <a href="../index1.html">
+                        <img src="../images/shopcar/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="fr">
+                    <img src="../images/shopcar/headfr.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="user clearfix">
+                    <span id="username"></span>
+                    <a id="tuichu" href="../index1.html">退出</a>
+                </div>
+                <div class="carcont">
+                    <div class="goodslist">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th width="75">
+                                        <input name="choseAll" type="checkbox" id="choseAll">
+                                        <label for="choseAll">全选</label>
+                                    </th>
+                                    <th width="355" colspan="2">商品名称</th>
+                                    <th width="96">发货站</th>
+                                    <th width="96">会员价</th>
+                                    <th width="140">数量</th>
+                                    <th width="110">金额小计</th>
+                                    <th width="110">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td>
+                                        <input type="checkbox" class="checkBox">
+                                    </td>
+                                    <td width="97" valign="top">
+                                        <img src="../images/index/bg1.jpg" alt="">
+                                    </td>
+                                    <td valign="top">
+                                        <p class="p1">阿萨德</p>
+                                    </td>
+                                    <td valign="top">
+                                        中国香港
+                                    </td>
+                                    <td valign="top">
+                                        123
+                                    </td>
+                                    <td valign="top">
+                                        <div class="countNum clearfix">
+                                            <div class="cPlus fl">-</div>
+                                            <div class="cInput fl">
+                                                <input class="Num" type="text" name="quantity" value="1">
+                                            </div>
+                                            <div class="cMinus fl">+</div>
+                                            <p class="p2">库存<i class="kucun">3</i>件</p>
+                                        </div>
+                                    </td>
+                                    <td valign="top">
+                                        <strong>
+                                            ￥<i class="xiaoji">123</i>
+                                        </strong>
+                                    </td>
+                                    <td valign="top">
+                                        <a href="###" class="del">删除</a>
+                                    </td>
+                                </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tishi">
+                        <p>购物车还没有宝贝噢，快去<a href="../html/goodslist.html?title=珠宝首饰">列表页</a>看看吧！</p>
+                    </div>
+                    <div id="main-foot">
+                        <div class="footer-div">
+                            <input type="checkbox" name="allxuan1" id="allxuan1">
+                            <label for="allxuan1">全选</label>
+                        </div>
+                        <ul>
+                            <li id="quanshan">删除</li>
+                            <li>移入收藏夹</li>
+                            <li>分享</li>
+                            <li>
+                                <a href="../html/goodslist.html?title=珠宝首饰">
+                                    继续购物</a>
+                            </li>
+                        </ul>
+                        <span>已选商品<i id="buynum">0</i>件</span>
+                        <span>合计（不含运费）:<i id="allprice">0.00</i></span>
+                        <a href="###" id="jiesuan">结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="content">
+                <ul class="footer-ul clearfix">
+                    <li class="f-left">
+                        <h4>服务指南</h4>
+                        <ul class="clearfix">
+                            <li><a href="###">Investors</a></li>
+                            <li><a href="###">物流配送</a></li>
+                            <li><a href="###">售后服务</a></li>
+                            <li><a href="###">联系我们</a></li>
+                            <li><a href="###">加入我们</a></li>
+                            <li><a href="###">帮助</a></li>
+                            <li><a href="###">寺库招商</a></li>
+                        </ul>
+                    </li>
+                    <li class="f-center">
+                        <h4>公共媒体</h4>
+                        <div class="f-logo">
+                            <div class="weibo">
+                                <i class="fa fa-weibo"></i>
+                                <span>微博</span>
+                                <div class="ewm1">
+                                    <img src="../images/index/ewm4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="weixin">
+                                <i class="fa fa-weixin"></i>
+                                <span>微信</span>
+                                <div class="ewm1">
+                                    <img src="../images/index/ewm5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="f-right">
+                        <h4>我们的APP</h4>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="###">寺库商城</a>
+                                <div class="ewm">
+                                    <img src="../images/index/ewm1.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="###">Try Try</a>
+                                <div class="ewm">
+                                    <img src="../images/index/ewm2.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="###">寺库艺术</a>
+                                <div class="ewm">
+                                    <img src="../images/index/ewm3.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer-inf">
+                    <p>
+                        <span>京公安备11010102001392</span>
+                        <span>京ICP证110119号 京ICP备09084709号-3</span>
+                        <span>ISO9001中国质量管理体系认证</span>
+                        <span>出版物经营许可证</span>
+                        <span>食品经营许可证</span>
+                        <span>京B2-20181305</span>
+                    </p>
+                    <p>
+                        <span>京食药网食备201810026</span>
+                        <span>客服电话：400-875-6789</span>
+                        <span>COPYRIGHT © 2010-2018 北京寺库商贸有限公司 版权所有</span>
+                    </p>
+                    <p>
+                        <a href="###">
+                            <img src="../images/index/f_01.jpg" alt="">
+                        </a>
+                        <a href="###">
+                            <img src="../images/index/cnnic.png" alt="">
+                        </a>
+                        <a href="###">
+                            <img src="../images/index/kexin.jpg" alt="">
+                        </a>
+                        <a href="###">
+                            <img src="../images/index/f_03.jpg" alt="">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/common.js"></script>
+<script>
+    let glist = document.getElementsByTagName('tbody')[0];
+    let dlcheck = getcookie('username');
+    let username = document.getElementById('username');
+    let tuichu = document.getElementById('tuichu');
+    username.innerHTML = dlcheck;
+    tuichu.onclick = () => {
+        removeCookie('username');
+    }
+
+    function init() {
+        ajax({
+            type: 'get',
+            url: '../api/shopcar.php',
+            success: str => {
+                // console.log(str);
+                creat(str);
+            }
+        });
+    }
+    init();
+
+    function creat(str) {
+        let arr = JSON.parse(str);
+        // console.log(arr);
+        let html = arr.map(item => {
+            return `<tr class="infor" data-id="${item.gid}">
+                        <td>
+                            <input type="checkbox" class="checkBox danxuan">
+                        </td>
+                        <td width="97" valign="top">
+                            <img src="${item.url}" alt="">
+                        </td>
+                        <td valign="top">
+                            <p class="p1">${item.title}</p>
+                        </td>
+                        <td valign="top">
+                            ${item.diqu1}
+                        </td>
+                        <td class="sale" valign="top">
+                            ${item.price1}
+                        </td>
+                        <td valign="top">
+                            <div class="countNum clearfix">
+                                <div class="cPlus fl jian">-</div>
+                                <div class="cInput fl">
+                                    <input class="Num num1" type="text" name="quantity" value="${item.num}">
+                                </div>
+                                <div class="cMinus fl jia">+</div>
+                                <p class="p2">库存<i class="kucun" data-kucun="${item.kucun}">${item.kucun}</i>件</p>
+                            </div>
+                        </td>
+                        <td valign="top">
+                            <strong>
+                                ￥<i class="xiaoji">${item.xiaoji} </i>
+                            </strong>
+                        </td>
+                        <td valign="top">
+                            <a href="###" class="del">删除</a>
+                        </td>
+                    </tr>`
+        }).join('');
+        glist.innerHTML = html;
+        let infor = glist.getElementsByClassName('infor');
+        let btnjian = glist.getElementsByClassName('jian');
+        let btnjia = glist.getElementsByClassName('jia');
+        let num1 = glist.getElementsByClassName('num1');
+        let kucun = glist.getElementsByClassName('kucun');
+        let del = glist.getElementsByClassName('del');
+        let allxuan = document.getElementById('choseAll')
+        let allxuan1 = document.getElementById('allxuan1')
+        let danxuan = glist.getElementsByClassName('danxuan');
+        let sale = glist.getElementsByClassName('sale');
+        let zongjia = glist.getElementsByClassName('xiaoji');
+        let fuqian = document.getElementById('allprice');
+        let shuliang = document.getElementById('buynum');
+        let jiesuan = document.getElementById('jiesuan');
+        let quanshan = document.getElementById('quanshan');
+        let tishi = document.getElementById('tishi');
+        if (glist.children.length == 0) {
+            tishi.style.display = 'flex';
+        } else {
+            tishi.style.display = 'none';
+        }
+
+        function changNum(num, now) {
+            var x = kucun[now].dataset.kucun;
+            if (num < 1) {
+                num = 1;
+            } else if (num >= x) {
+                num = x;
+            }
+            num1[now].value = num;
+            zongjia[now].innerHTML = (num * sale[now].innerHTML).toFixed(2);
+            total();
+        }
+        //绑定索引 
+        for (var i = 0; i < infor.length; i++) {
+            btnjian[i].index = i;
+            btnjia[i].index = i;
+            num1[i].index = i;
+            del[i].index = i;
+
+            //加
+            btnjia[i].onclick = function () {
+                newindex(btnjia);
+                var num = num1[this.index].value;
+                num++;
+                changNum(num, this.index);
+            }
+            num1[i].oninput = () => {
+                changNum(num, this.index);
+            }
+            //减
+            btnjian[i].onclick = function () {
+                newindex(btnjian);
+                var num = num1[this.index].value;
+                num--;
+                changNum(num, this.index);
+            }
+            //自定义输入
+            num1[i].oninput = function () {
+                var num = this.value;
+                changNum(num, this.index);
+            }
+            //删除
+            del[i].onclick = function () {
+                console.log(infor[this.index].dataset["id"]);
+                var res = confirm('你确定要删除这个宝贝吗？');
+                if (res) {
+                    // glist.removeChild(infor[this.index]);
+                    ajax({
+                        type: 'get',
+                        url: '../api/subshop.php',
+                        data: {
+                            gid: infor[this.index].dataset["id"]
+                        },
+                        success: str => {
+                            console.log(str);
+                        }
+                    });
+                }
+                location.href = "shopcar.html";
+                init();
+                newindex(del);
+                total();
+            }
+        }
+        //重新绑定索引
+        function newindex(arr) {
+            for (var j = 0; j < arr.length; j++) {
+                arr[j].index = j;
+            }
+        }
+        //全选
+        allxuan.onclick = function () {
+            for (var i = 0; i < danxuan.length; i++) {
+                danxuan[i].checked = allxuan.checked;
+                allxuan1.checked = allxuan.checked;
+            }
+            total();
+        }
+        allxuan1.onclick = function () {
+            for (var i = 0; i < danxuan.length; i++) {
+                danxuan[i].checked = allxuan1.checked;
+                allxuan.checked = allxuan1.checked;
+            }
+            total();
+        }
+        //反控制全选
+        function fanxuan() {
+            var num = 0;
+            var arr = [];
+            for (var i = 0; i < danxuan.length; i++) {
+                if (danxuan[i].checked) {
+                    num++;
+                    arr.push(i);
+                }
+            }
+            if (num == danxuan.length) {
+                allxuan.checked = true;
+                allxuan1.checked = true;
+            } else {
+                allxuan.checked = false;
+                allxuan1.checked = false;
+            }
+            return arr;
+        }
+        //计算总价
+        function total(arr) {
+            var arr = fanxuan();
+            var sum = 0;
+            var allPrice = 0;
+            arr.forEach(function (item) {
+                sum += num1[item].value * 1;
+                allPrice += zongjia[item].innerHTML * 1;
+            });
+            // console.log(sum);
+            // console.log(allPrice);
+            shuliang.innerHTML = sum;
+            fuqian.innerHTML = allPrice.toFixed(2);
+            if (arr.length) {
+                jiesuan.className = 'active';
+            } else {
+                jiesuan.className = '';
+            }
+        }
+
+        for (var i = 0; i < danxuan.length; i++) {
+            danxuan[i].onclick = function () {
+                total();
+            }
+        }
+        quanshan.onclick = function () {
+            // var arr = fanxuan().reverse();
+            var arr = fanxuan();
+            var res = confirm('你确定要删除选中的行吗？');
+            if (res) {
+                arr.forEach(function (item, index) {
+                    // glist.removeChild(infor[item]);
+                    ajax({
+                        type: 'get',
+                        url: '../api/subshop.php',
+                        data: {
+                            gid: infor[index].dataset["id"]
+                        },
+                        success: str => {
+                            init();
+                        }
+                    });
+                });
+                // location.href = "shopcar.html";
+            }
+            inin();
+            location.href = "shopcar.html";
+            total();
+        }
+        total();
+    }
+</script>
+
+</html>

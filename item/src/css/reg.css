@@ -1,0 +1,320 @@
+body {
+  background: #fdf8f4 url(../images/reg/login_03.jpg) no-repeat center top;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.content {
+  height: 100%;
+  width: 1200px;
+  margin: auto;
+}
+
+#reg {
+  position: relative;
+}
+
+#reg .header {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#reg .header .logo {
+  width: 30px;
+}
+
+#reg .header .hlist a {
+  display: inline-block;
+  color: #999;
+  line-height: 70px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+#reg .header .hlist a:hover {
+  color: orange;
+}
+
+#reg .main {
+  width: 100%;
+  height: 780px;
+  padding: 30px 0;
+}
+
+#reg .main .reg-box {
+  width: 310px;
+  padding: 30px 35px;
+  float: right;
+  background-color: #fff;
+  margin-top: 80px;
+  position: relative;
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+}
+
+#reg .main .reg-box .reg-inf ul li .usertip {
+  width: 100%;
+}
+
+#reg .main .reg-box .reg-inf ul li .usertip span {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 12px;
+}
+
+#reg .main .reg-box .reg-inf ul li .usertip div {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+}
+
+#reg .main .reg-box .reg-inf ul li .username-box input {
+  width: 298px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 5px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'microsoft yahei';
+  border-radius: 0;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+
+#reg .main .reg-box .reg-inf ul li .pswtip {
+  width: 100%;
+}
+
+#reg .main .reg-box .reg-inf ul li .pswtip span {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 12px;
+}
+
+#reg .main .reg-box .reg-inf ul li .pswtip div {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+}
+
+#reg .main .reg-box .reg-inf ul li .pswname-box input {
+  width: 298px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 5px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'microsoft yahei';
+  border-radius: 0;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+
+#reg .main .reg-box .reg-inf ul li .psw1tip {
+  width: 100%;
+}
+
+#reg .main .reg-box .reg-inf ul li .psw1tip span {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-size: 12px;
+}
+
+#reg .main .reg-box .reg-inf ul li .psw1tip div {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+}
+
+#reg .main .reg-box .reg-inf ul li .pswname1-box input {
+  width: 298px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 5px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'microsoft yahei';
+  border-radius: 0;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 {
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 #regsubmit {
+  width: 100%;
+  background-color: #999;
+  border: 0;
+  cursor: no-drop;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 .tk {
+  white-space: nowrap;
+  font-size: 12px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 0;
+  color: #999;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 .msg {
+  width: 100%;
+  padding-top: 30px;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 .msg span {
+  color: #999;
+  font-size: 12px;
+}
+
+#reg .main .reg-box .reg-inf .reg-inf1 .msg span a {
+  color: #f19108;
+}
+
+#reg .footer {
+  width: 100%;
+  margin-top: 70px;
+  padding: 37px 0 66px;
+  background-color: #f5f5f5;
+}
+
+#reg .footer .footer-list li {
+  float: left;
+  width: 236px;
+  line-height: 34px;
+}
+
+#reg .footer .footer-list li a {
+  font-size: 14px;
+  color: inherit;
+}
+
+#reg .footer .footer-list li a:hover {
+  color: #f19108;
+}
+
+#reg .footer .footer-inf {
+  margin-top: 25px;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+#reg .footer .footer-inf span {
+  margin-right: 28px;
+}
+
+#reg .footer .footer-inf span a {
+  color: inherit;
+}
+
+#reg .footer .footer-inf span a:hover {
+  color: #f19108;
+}
+
+#reg .footer .footer-inf .f-img {
+  margin-top: 8px;
+}
+
+#reg .footer .footer-inf .f-img a {
+  float: left;
+  margin-right: 20px;
+  width: 108px;
+  height: 40px;
+}
+
+#reg .footer .footer-inf .f-img a img {
+  width: 100%;
+  height: 100%;
+}
+
+#reg-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#reg-tc {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  background: white;
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  display: none;
+}
+
+#reg-cha {
+  position: absolute;
+  font-size: 20px;
+  right: 5%;
+  top: 2%;
+  cursor: pointer;
+}
+
+#reg-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  outline: none;
+  border: none;
+  box-shadow: 0 0 23px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #fff;
+  background: #f19108;
+}
+
+#reg-cont {
+  font-size: 16px;
+  color: #f19108;
+  line-height: 26px;
+  display: inline-block;
+  margin-top: -20px;
+}

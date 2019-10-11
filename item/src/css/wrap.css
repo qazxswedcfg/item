@@ -1,0 +1,163 @@
+body,
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+#wrap ul {
+    list-style: none;
+}
+
+#wrap img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 400px;
+    height: 492px;
+}
+
+#wrap {
+    /* margin-bottom: 50px; */
+    position: relative;
+    /* top: 100px; */
+    left: 40px;
+}
+
+#wrap2 {
+    /* margin-bottom: 50px; */
+    position: relative;
+    top: 100px;
+    left: 100px;
+    /* background: gold; */
+}
+
+#wrap .imgs {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#wrap .main {
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    width: 390px;
+    height: 390px;
+    border: 1px solid #dadada;
+}
+
+#wrap .bottom {
+    width: 398px;
+    height: 72px;
+    position: relative;
+    margin: 10px 0;
+}
+
+#wrap .bottom p {
+    width: 35px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    background: #777;
+    /* font-size: 24px; */
+    cursor: pointer;
+    float: left;
+}
+
+#wrap .bottom .prev {
+    margin-right: 5px;
+    background: #ccc;
+}
+
+#wrap .box {
+    width: 318px;
+    height: 72px;
+    overflow: hidden;
+    position: relative;
+    /* left: 40px;
+	top: 0; */
+    float: left;
+    margin-right: 5px;
+}
+
+/* .bottom .prev{
+	position: absolute;
+	left: 0px;
+	top: 0;
+}
+.bottom .next{
+	position: absolute;
+	right:0 ;
+	top: 0;
+} */
+
+#wrap .smaller {
+    /* position: relative; */
+    overflow: hidden;
+    /* width: 400px; */
+    height: 72px;
+    /* margin-top: 10px; */
+    transition: all 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#wrap .smaller li {
+    position: relative;
+    float: left;
+    padding: 2px;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #000;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+#wrap .smaller .active {
+    border: 2px solid orange;
+}
+
+#wrap .smaller li:first-child {
+    margin-left: 0;
+}
+
+#wrap .smaller .current {
+    border-color: #ff6a00;
+}
+
+#wrap .biger {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    left: 410px;
+    width: 500px;
+    height: 400px;
+    z-index: 10;
+}
+
+#wrap .mask {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: crosshair;
+}
+
+#wrap .biger img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+}

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#lunbo {
+    width: 520px;
+    height: 280px;
+    /* border: 1px solid red; */
+    /* margin: 100px auto; */
+    position: relative;
+    /* background: skyblue; */
+    overflow: hidden;
+}
+
+/* #banner .imglist {
+    width: 100%;
+    height: 100%;
+} */
+
+#lunbo ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+#lunbo ul li {
+    position: absolute;
+    left: 520px;
+    width: 100%;
+    height: 100%;
+}
+
+#lunbo ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#lunbo .point {
+    width: 100px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#lunbo .point span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: white;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#lunbo .point .active {
+    background: gold;
+}
+
+#lunbo .left {
+    width: 30px;
+    height: 50px;
+    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#lunbo .right {
+    width: 30px;
+    height: 50px;
+    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.6);
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+#lunbo .zz4 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+#lunbo:hover .zz4 {
+    background: rgba(0, 0, 0, 0.2);
+}

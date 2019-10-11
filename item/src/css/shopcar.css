@@ -1,0 +1,375 @@
+.content {
+  width: 990px;
+  margin: auto;
+  height: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+#shopcar .head {
+  height: 70px;
+  width: 100%;
+  background: #323232;
+}
+
+#shopcar .main {
+  margin-bottom: 50px;
+}
+
+#shopcar .main .user {
+  position: relative;
+  z-index: 2;
+  color: #666;
+  margin-bottom: -2px;
+}
+
+#shopcar .main .user span {
+  padding-left: 18px;
+  line-height: 28px;
+  margin-top: 4px;
+  color: #666;
+  font-size: 12px;
+}
+
+#shopcar .main .user a {
+  color: #e93b39;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+#shopcar .main .carcont .goodslist {
+  width: 986px;
+  border: 1px solid #f1f1f1;
+  padding: 1px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#shopcar .main .carcont .goodslist table {
+  width: 100%;
+  color: #666;
+}
+
+#shopcar .main .carcont .goodslist table thead tr th {
+  height: 48px;
+  color: #999;
+  border-bottom: 1px solid #fff;
+  background: #e5e5e5;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td {
+  background: white;
+  padding: 20px 0 15px;
+  border-top: 1px solid #ececec;
+  text-align: center;
+  line-height: 22px;
+  margin-top: -1px;
+  font-size: 12px;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td img {
+  width: 82px;
+  height: 82px;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .p1 {
+  text-align: left;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td i {
+  color: red;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .countNum {
+  width: 58px;
+  margin: 0 auto 2px;
+  overflow: hidden;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .countNum .cPlus,
+#shopcar .main .carcont .goodslist table tbody tr td .countNum .cMinus {
+  width: 11px;
+  height: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #666;
+  padding-right: 1px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .countNum .cInput {
+  margin-top: -3px;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .countNum .cInput .Num {
+  width: 30px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-left: 0;
+  border-right: 0;
+  color: #666;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td strong {
+  color: #e93b39;
+}
+
+#shopcar .main .carcont .goodslist table tbody tr td .del {
+  color: #333;
+}
+
+#shopcar .main .carcont #tishi {
+  width: 100%;
+  height: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+#shopcar .main .carcont #tishi a {
+  color: slateblue;
+}
+
+#shopcar .main .carcont #main-foot {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+#shopcar .main .carcont #main-foot .footer-div {
+  margin-left: 10px;
+  flex: 1;
+}
+
+#shopcar .main .carcont #main-foot ul {
+  flex: 8;
+}
+
+#shopcar .main .carcont #main-foot ul li {
+  float: left;
+  margin: 0 13px;
+}
+
+#shopcar .main .carcont #main-foot ul #quanshan {
+  cursor: pointer;
+}
+
+#shopcar .main .carcont #main-foot span {
+  flex: 3.5;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+#shopcar .main .carcont #main-foot span #buynum {
+  font-size: 14px;
+  color: #ff4400;
+  margin: 0 2px;
+}
+
+#shopcar .main .carcont #main-foot span #allprice {
+  font-size: 16px;
+  color: #ff4400;
+  margin-left: 10px;
+}
+
+#shopcar .main .carcont #main-foot #jiesuan {
+  display: inline-block;
+  width: 119px;
+  height: 50px;
+  background: #b0b0b0;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 19px;
+  cursor: no-drop;
+}
+
+#shopcar .main .carcont #main-foot .active {
+  background: #ff4400 !important;
+  cursor: pointer !important;
+}
+
+#shopcar .footer {
+  height: 490px;
+  background: #ffb81c;
+  padding-top: 40px;
+  font-size: 16px;
+}
+
+#shopcar .footer .content {
+  width: 1200px;
+}
+
+#shopcar .footer .footer-ul {
+  width: 100%;
+}
+
+#shopcar .footer .footer-ul .f-left {
+  width: 325px;
+  float: left;
+}
+
+#shopcar .footer .footer-ul .f-left h4 {
+  margin-bottom: 26px;
+}
+
+#shopcar .footer .footer-ul .f-left ul li {
+  height: 28px;
+  width: 115px;
+  float: left;
+}
+
+#shopcar .footer .footer-ul .f-left ul li a {
+  font-size: 14px;
+  color: #000;
+}
+
+#shopcar .footer .footer-ul .f-left ul li a:hover {
+  text-decoration: underline;
+}
+
+#shopcar .footer .footer-ul .f-center {
+  float: left;
+  text-align: center;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo {
+  position: relative;
+  width: 550px;
+  height: 240px;
+  background: url(../images/index/footer-logo.png) no-repeat 100%;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weibo {
+  position: absolute;
+  top: 107px;
+  height: 20px;
+  cursor: pointer;
+  left: 91px;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .ewm1 {
+  position: absolute;
+  left: -133px;
+  top: -50px;
+  width: 126px;
+  height: 120px;
+  display: none;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .ewm1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weibo:hover span {
+  text-decoration: underline;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weibo:hover .ewm1 {
+  display: block;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weixin:hover span {
+  text-decoration: underline;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weixin:hover .ewm1 {
+  display: block;
+}
+
+#shopcar .footer .footer-ul .f-center .f-logo .weixin {
+  position: absolute;
+  top: 107px;
+  height: 20px;
+  cursor: pointer;
+  left: 394px;
+}
+
+#shopcar .footer .footer-ul .f-right {
+  margin-left: 207px;
+  float: left;
+}
+
+#shopcar .footer .footer-ul .f-right h4 {
+  margin-bottom: 26px;
+}
+
+#shopcar .footer .footer-ul .f-right ul li {
+  height: 33px;
+  position: relative;
+}
+
+#shopcar .footer .footer-ul .f-right ul li a {
+  font-size: 14px;
+  color: #000;
+}
+
+#shopcar .footer .footer-ul .f-right ul li .ewm {
+  position: absolute;
+  left: -133px;
+  top: -50px;
+  width: 126px;
+  height: 120px;
+  display: none;
+}
+
+#shopcar .footer .footer-ul .f-right ul li .ewm img {
+  width: 100%;
+  height: 100%;
+}
+
+#shopcar .footer .footer-ul .f-right ul li a:hover {
+  text-decoration: underline;
+}
+
+#shopcar .footer .footer-ul .f-right ul li:hover .ewm {
+  display: block;
+}
+
+#shopcar .footer .footer-inf {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+#shopcar .footer .footer-inf p {
+  margin-bottom: 20px;
+}
+
+#shopcar .footer .footer-inf p span {
+  margin-right: 30px;
+}
+
+#shopcar .footer .footer-inf p a {
+  float: left;
+  width: 108px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+#shopcar .footer .footer-inf p a img {
+  width: 100%;
+  height: 100%;
+}
